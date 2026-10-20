@@ -3,81 +3,124 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-<title>Happy Birthday, Amanda! (2005 – 2026)</title>
+<title>Happy Birthday, Amanda! — Handcrafted Shabby-Chic Collection (2005 – 2026)</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,700;1,400&family=Special+Elite&family=Caveat:wght@600;700&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     min-height: 100vh;
-    background: radial-gradient(circle at 50% 20%, #6e2e14 0%, #381709 55%, #1c0b04 100%);
-    color: #fdf5e6;
+    background-color: #f6edde;
+    background-image:
+      radial-gradient(circle at 20% 15%, rgba(198, 122, 92, 0.14) 0%, transparent 45%),
+      radial-gradient(circle at 80% 85%, rgba(126, 140, 110, 0.16) 0%, transparent 45%),
+      repeating-linear-gradient(0deg, rgba(168, 132, 98, 0.06) 0px, rgba(168, 132, 98, 0.06) 1px, transparent 1px, transparent 5px),
+      repeating-linear-gradient(90deg, rgba(168, 132, 98, 0.05) 0px, rgba(168, 132, 98, 0.05) 1px, transparent 1px, transparent 5px);
+    color: #4a2c18;
     font-family: 'Cormorant Garamond', Georgia, serif;
-    padding: 20px 14px 60px;
+    padding: 18px 12px 60px;
     text-align: center;
+    border: 10px double #c8a986;
   }
   .container {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
+  }
+  .header-box {
+    background: #efe2cc;
+    border: 2px dashed #a88058;
+    border-radius: 16px;
+    padding: 20px 16px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 24px rgba(74, 44, 24, 0.12);
   }
   h1 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: clamp(2rem, 7vw, 3.2rem);
-    color: #facd73;
-    text-shadow: 0 3px 14px rgba(0,0,0,0.65);
-    margin-bottom: 6px;
+    color: #6b3418;
+    margin-bottom: 4px;
   }
   .subtitle {
-    font-size: clamp(1.15rem, 4vw, 1.45rem);
-    font-style: italic;
-    color: #f5debe;
-    margin-bottom: 6px;
+    font-family: 'Caveat', cursive, serif;
+    font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+    color: #8c4f2b;
+    margin-bottom: 8px;
   }
   .music-badge {
     display: inline-block;
-    background: rgba(158, 58, 24, 0.85);
-    border: 1.5px solid #f0b85a;
-    color: #fff4de;
+    background: #fbf4e6;
+    border: 1.5px solid #9c7248;
+    color: #556246;
     padding: 5px 14px;
-    border-radius: 999px;
-    font-size: 0.98rem;
-    font-weight: 700;
-    margin-bottom: 18px;
+    border-radius: 6px;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.88rem;
   }
   .card {
-    background: rgba(36, 14, 6, 0.88);
-    border: 2px solid rgba(225, 155, 55, 0.7);
-    border-radius: 22px;
-    padding: 18px 14px 22px;
-    margin-bottom: 24px;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    background: #fdf9f0;
+    border: 2px solid #cbb08e;
+    border-radius: 16px;
+    padding: 20px 14px 22px;
+    margin-bottom: 26px;
+    box-shadow: 0 12px 30px rgba(62, 36, 16, 0.14);
+    position: relative;
+  }
+  /* Washi tape corners on cards */
+  .card::before, .card::after {
+    content: '';
+    position: absolute;
+    width: 82px;
+    height: 22px;
+    top: -9px;
+    opacity: 0.82;
+  }
+  .card::before {
+    left: -14px;
+    background: repeating-linear-gradient(45deg, #c66b49, #c66b49 6px, #e39a7b 6px, #e39a7b 12px);
+    transform: rotate(-28deg);
+  }
+  .card::after {
+    right: -14px;
+    background: repeating-linear-gradient(-45deg, #7e8c6e, #7e8c6e 6px, #a3b193 6px, #a3b193 12px);
+    transform: rotate(28deg);
+  }
+  .edition-tag {
+    display: inline-block;
+    background: #b85a3a;
+    color: #fff8f0;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.8rem;
+    padding: 4px 11px;
+    border-radius: 4px;
+    margin-bottom: 8px;
   }
   .card h2 {
-    font-size: 1.55rem;
-    color: #facd73;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    color: #5c3016;
     margin-bottom: 6px;
   }
   .card p {
     font-size: 1.08rem;
-    color: #e8cfa8;
+    color: #6e482c;
     margin-bottom: 14px;
   }
   video {
     width: 100%;
-    border-radius: 14px;
-    border: 2px solid #d4882a;
-    background: #120602;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.65);
+    border-radius: 10px;
+    border: 2px solid #bfa07a;
+    background: #2b180c;
+    box-shadow: 0 8px 22px rgba(62, 36, 16, 0.22);
   }
   .video-vertical {
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
     display: block;
   }
   img.preview {
     width: 100%;
-    border-radius: 12px;
-    border: 2px solid #d4882a;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.65);
+    border-radius: 8px;
+    border: 2px solid #bfa07a;
+    box-shadow: 0 8px 22px rgba(62, 36, 16, 0.22);
     display: block;
   }
   .btn-row {
@@ -87,66 +130,99 @@
     flex-wrap: wrap;
     margin-top: 14px;
   }
-  a.btn, button.btn {
+  a.btn {
     display: inline-block;
-    background: linear-gradient(135deg, #c9521e, #8c310e);
-    color: #fff8eb;
-    text-decoration: none;
-    border: 1.5px solid #f5be69;
-    padding: 11px 20px;
-    border-radius: 999px;
-    font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-  }
-  a.btn-gold {
-    background: linear-gradient(135deg, #d98a26, #a35810);
+    background: #7e8c6e;
     color: #fff;
-    font-size: 1.18rem;
-    padding: 13px 26px;
+    text-decoration: none;
+    border: 1.5px solid #556246;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.14);
+  }
+  a.btn-rust {
+    background: #b85a3a;
+    border-color: #8c3b20;
   }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Happy Birthday, Amanda!</h1>
-  <div class="subtitle">Rivers & Roads — Our Adventure Timeline Together (2005 – 2026)</div>
-  <div class="music-badge">🎵 Soundtrack: The Head and the Heart</div>
+  <div class="header-box">
+    <h1>Happy Birthday, Amanda!</h1>
+    <div class="subtitle">Rivers & Roads — Our Handcrafted Shabby-Chic Adventure Timeline (2005 – 2026)</div>
+    <div class="music-badge">🎵 Soundtrack: The Head and the Heart ("Rivers and Roads", "Lost in My Mind" & "Honeybee")</div>
+    <div class="btn-row">
+      <a class="btn btn-rust" href="Happy_Birthday_Amanda_Interactive.html">✨ Open Interactive 3-Mode Hyperframes Scrapbook</a>
+    </div>
+  </div>
 
+  <!-- SHABBY CHIC VIDEO 1 -->
   <div class="card">
-    <h2>📱 Vertical Phone Edition (9:16 Full-Screen Video)</h2>
-    <p>Tap play & unmute for the full 2005–2026 timeline with <em>The Head and the Heart</em>!</p>
+    <span class="edition-tag">SHABBY-CHIC VIDEO 1 • HEIRLOOM SCRAPBOOK</span>
+    <h2>📖 Edition I: The Linen & Washi Tape Scrapbook</h2>
+    <p>Oatmeal linen canvas, animated terracotta & sage washi tape corners, Ken Burns photo zoom, and kraft paper page-turn transitions.</p>
+    <video controls playsinline preload="metadata" poster="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg">
+      <source src="Video1_ShabbyChic_Scrapbook.mp4" type="video/mp4" />
+    </video>
+    <div class="btn-row">
+      <a class="btn btn-rust" href="Video1_ShabbyChic_Scrapbook.mp4" download="Video1_ShabbyChic_Scrapbook.mp4">⬇️ Save Video 1 (Scrapbook)</a>
+    </div>
+  </div>
+
+  <!-- SHABBY CHIC VIDEO 2 -->
+  <div class="card">
+    <span class="edition-tag">SHABBY-CHIC VIDEO 2 • RUSTIC CLOTHESLINE</span>
+    <h2>🧺 Edition II: The Rustic Barnwood & Twine Clothesline</h2>
+    <p>Distressed whitewashed shiplap wood planks, Edison string-light glow, continuous horizontal camera glide, and swinging wooden clothespins on jute twine.</p>
+    <video controls playsinline preload="metadata" poster="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg">
+      <source src="Video2_Rustic_Clothesline.mp4" type="video/mp4" />
+    </video>
+    <div class="btn-row">
+      <a class="btn btn-rust" href="Video2_Rustic_Clothesline.mp4" download="Video2_Rustic_Clothesline.mp4">⬇️ Save Video 2 (Clothesline)</a>
+    </div>
+  </div>
+
+  <!-- SHABBY CHIC VIDEO 3 -->
+  <div class="card">
+    <span class="edition-tag">SHABBY-CHIC VIDEO 3 • BOTANICAL MEMORY BOX</span>
+    <h2>🌿 Edition III: The Vintage Botanical Memory Box (Camera Fly-Through)</h2>
+    <p>2.5D tabletop camera pan & zoom across pressed eucalyptus sprigs, typewriter date stamps, and warm vintage amber film light-leak transitions.</p>
+    <video controls playsinline preload="metadata" poster="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg">
+      <source src="Video3_Vintage_MemoryBox.mp4" type="video/mp4" />
+    </video>
+    <div class="btn-row">
+      <a class="btn btn-rust" href="Video3_Vintage_MemoryBox.mp4" download="Video3_Vintage_MemoryBox.mp4">⬇️ Save Video 3 (Memory Box)</a>
+    </div>
+  </div>
+
+  <!-- SHABBY CHIC COLLAGE -->
+  <div class="card">
+    <span class="edition-tag">HANDCRAFTED ETSY COLLAGE (2005 – 2026)</span>
+    <h2>🖼️ Shabby-Chic Linen, Washi Tape & Clothespin Collage</h2>
+    <p>Tap to open full-resolution (3400×2280) and pinch-to-zoom on all 33 Polaroid memories!</p>
+    <a href="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg" target="_blank">
+      <img class="preview" src="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg" alt="Shabby Chic Collage" />
+    </a>
+    <div class="btn-row">
+      <a class="btn" href="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg" download="Happy_Birthday_Amanda_ShabbyChic_Collage.jpg">⬇️ Save Shabby-Chic Collage</a>
+      <a class="btn" href="Happy_Birthday_Amanda_Collage.jpg" download="Happy_Birthday_Amanda_Collage.jpg">⬇️ Save Classic Autumn Collage</a>
+    </div>
+  </div>
+
+  <!-- VERTICAL PHONE EDITION -->
+  <div class="card">
+    <span class="edition-tag">VERTICAL 9:16 PHONE EDITION</span>
+    <h2>📱 Vertical Full-Screen Phone Video (9:16)</h2>
+    <p>Formatted vertically (1080×1920) to fill your phone screen edge-to-edge.</p>
     <video class="video-vertical" controls playsinline preload="metadata" poster="Happy_Birthday_Amanda_Phone_Collage.jpg">
       <source src="Happy_Birthday_Amanda_Phone.mp4" type="video/mp4" />
     </video>
     <div class="btn-row">
-      <a class="btn" href="Happy_Birthday_Amanda_Phone.mp4" download="Happy_Birthday_Amanda_Phone.mp4">⬇️ Save Phone Video</a>
-      <a class="btn" href="Happy_Birthday_Amanda_Interactive.html">✨ Open Interactive Scrapbook</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>🎬 Widescreen Edition (16:9 Full Collage Video)</h2>
-    <p>Rotate your phone sideways for the 33-photo widescreen timeline experience.</p>
-    <video controls playsinline preload="metadata" poster="Happy_Birthday_Amanda_Collage.jpg">
-      <source src="Happy_Birthday_Amanda_Animation.mp4" type="video/mp4" />
-    </video>
-    <div class="btn-row">
-      <a class="btn" href="Happy_Birthday_Amanda_Animation.mp4" download="Happy_Birthday_Amanda_Animation.mp4">⬇️ Save Widescreen Video</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>🖼️ Full 2005 – 2026 Fall Adventure Timeline Collage</h2>
-    <p>Pinch to zoom in on all 33 Polaroid memories, or press & hold the image to save to Photos!</p>
-    <a href="Happy_Birthday_Amanda_Collage.jpg" target="_blank">
-      <img class="preview" src="Happy_Birthday_Amanda_Collage.jpg" alt="Happy Birthday Amanda Collage" />
-    </a>
-    <div class="btn-row">
-      <a class="btn" href="Happy_Birthday_Amanda_Collage.jpg" download="Happy_Birthday_Amanda_Collage.jpg">⬇️ Download Full Collage</a>
-      <a class="btn" href="Happy_Birthday_Amanda_Phone_Collage.jpg" download="Happy_Birthday_Amanda_Phone_Collage.jpg">⬇️ Phone Wallpaper Collage</a>
+      <a class="btn" href="Happy_Birthday_Amanda_Phone.mp4" download="Happy_Birthday_Amanda_Phone.mp4">⬇️ Save Vertical Phone Video</a>
     </div>
   </div>
 </div>
